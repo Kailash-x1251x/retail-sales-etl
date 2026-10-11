@@ -55,10 +55,16 @@ The pipeline identifies records that fail validation and separates them from val
 
 ## Database
 
-The pipeline uses SQLite and maintains two tables:
+The project uses SQLite for local storage. The database file is created at `data/retail_sales.db` when the pipeline runs.
 
-- `sales` — valid sales records
-- `rejected_sales` — records rejected during validation
+Two tables are maintained:
+
+- `sales` — validated sales records, including the calculated `total_sales` field.
+- `rejected_sales` — records that fail validation, including their rejection reasons.
+
+Before loading each dataset, the pipeline clears the existing records from the corresponding table and inserts the current run's records.
+
+The SQLite database file is generated locally and is not tracked in Git.
 
 ## Generated Reports
 
