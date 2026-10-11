@@ -70,9 +70,49 @@ The pipeline uses SQLite and maintains two tables:
 
 ## How to Run
 
-1. Clone this repository.
-2. Create and activate a Python virtual environment.
-3. Install pandas.
-4. Run the pipeline using `src/main.py`.
+### Prerequisites
 
-Detailed commands and setup instructions will be added as the project is finalized.
+- Python 3.12 or a compatible Python 3 version
+- pip (Python package installer)
+
+### Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Kailash-x1251x/retail-sales-etl.git
+   cd retail-sales-etl
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python3 -m venv .venv
+   ```
+
+3. Activate the virtual environment (macOS/Linux):
+
+   ```bash
+   source .venv/bin/activate
+   ```
+
+4. Install the required dependency:
+
+   ```bash
+   python -m pip install pandas
+   ```
+
+### Run the Pipeline
+
+Execute the following command from the project root:
+
+```bash
+python src/main.py
+```
+
+The pipeline reads `data/raw_sales.csv`, validates and transforms the records, generates CSV reports in `data/processed/`, and loads valid and rejected records into the SQLite database.
+
+### Output
+
+Generated CSV files are saved in `data/processed/`. The SQLite database is created locally in the `data/` directory.
+
