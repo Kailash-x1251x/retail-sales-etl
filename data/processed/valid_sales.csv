@@ -1,0 +1,10 @@
+transaction_id,transaction_date,product,quantity,unit_price,city,total_sales
+T1001,2026-10-01,Keyboard,2.0,1500,Chennai,3000.0
+T1003,2026-10-02,Monitor,1.0,12000,Bengaluru,12000.0
+T1004,2026-10-02,Laptop,1.0,55000,Hyderabad,55000.0
+T1005,2026-10-03,Keyboard,1.0,1500,Mumbai,1500.0
+T1006,2026-10-03,Mouse,2.0,500,Chennai,1000.0
+T1007,2026-10-04,Monitor,2.0,12000,Bengaluru,24000.0
+T1008,2026-10-04,Laptop,1.0,55000,Hyderabad,55000.0
+T1009,2026-10-05,Headphones,4.0,2000,Mumbai,8000.0
+T1010,2026-10-05,Keyboard,3.0,1500,Chennai,4500.0

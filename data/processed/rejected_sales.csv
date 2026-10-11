@@ -1,0 +1,6 @@
+transaction_id,transaction_date,product,quantity,unit_price,city,rejection_reason
+T1002,2026-10-01,Mouse,3.0,500,Chennai,Duplicate transaction ID
+T1002,2026-10-01,Mouse,3.0,500,Chennai,Duplicate transaction ID
+T1011,2026-10-06,Monitor,,12000,Bengaluru,Missing required field
+T1012,2026-10-06,Laptop,-1.0,55000,Hyderabad,Invalid quantity
+T1013,,Keyboard,2.0,1500,Chennai,Invalid transaction date
